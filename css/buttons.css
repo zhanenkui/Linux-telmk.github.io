@@ -1,0 +1,140 @@
+.b--btn-primary {
+  position: relative;
+  display: inline-block;
+  margin-bottom: -5px;
+  padding: 1rem 1.5rem;
+  border: 1px solid transparent;
+  background-color: transparent;
+  transition: all .6s ease-out;
+}
+
+.b--btn-primary__text {
+  color: #0a2d72;
+  font-size: 20px;
+  font-weight: 300;
+  display: inline-flex;
+  align-items: center;
+}
+
+
+.b--btn-primary:hover, .b--btn-primary:active, .b--btn-primary:focus {
+  text-decoration: none;
+  transition: all .6s ease-out;
+}
+
+.b--btn-primary__text__dash {
+  height: 1px;
+  width: 18px;
+  position: relative;
+  color: #0a2d72;
+  background: #0a2d72;
+  margin-left: 1rem;
+}
+
+
+/* BTN Secondary */
+.b--link--secondary {
+  color: #0a2d72;
+  position: relative;
+  transition: all .4s ease-in-out;
+  font-size: 20px;
+}
+
+.b--link--secondary:hover,
+.b--link--secondary:focus,
+.b--link--secondary:active   {
+  color: #0a2d72 ;
+  text-decoration: none;
+}
+
+.b--link--secondary::after{
+  content:"";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0%;
+  height: 2px;
+  background: #0a2d72;
+  transition: all 0.4s ease 0s;
+}
+
+.b--link--secondary:hover:after {
+  background:  #0a2d72;
+  width: 100%;
+}
+
+
+
+/* BTN Primary Hover */
+.b--btn-primary__line {
+  background: #0a2d72;
+  position: absolute;
+  z-index: 1;
+}
+
+.b--btn-primary__line--right {
+  right: -1px;
+  transform-origin: center top;
+  transition: transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.23s, -webkit-transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.23s;
+  width: 1px;
+  bottom: -1px;
+  top: -1px;
+  transform: scale3d(1, 0, 1);
+}
+
+.b--btn-primary__line--left {
+  left: -1px;
+  transform-origin: center bottom;
+  transition: transform 0.08s linear 0.51s, -webkit-transform 0.08s linear 0.51s;
+  width: 1px;
+  bottom: -1px;
+  top: -1px;
+  transform: scale3d(1, 0, 1);
+}
+
+.b--btn-primary__line--top {
+  top: -1px;
+  transform-origin: left center;
+  transition: transform 0.08s linear 0.43s, -webkit-transform 0.08s linear 0.43s;
+  height: 1px;
+  left: -1px;
+  right: -1px;
+  transform: scale3d(0, 1, 1);
+}
+
+.b--btn-primary__line--bottom {
+  bottom: -1px;
+  transform-origin: right center;
+  transition: transform 0.3s cubic-bezier(1, 0, 0.65, 1.01) 0s, -webkit-transform 0.3s cubic-bezier(1, 0, 0.65, 1.01) 0s;
+  height: 1px;
+  left: -1px;
+  right: -1px;
+  transform: scale3d(0, 1, 1);
+}
+
+.b--btn-primary:hover .b--btn-primary__line, 
+.b--btn-primary:active .b--btn-primary__line, 
+.b--btn-primary:focus .b--btn-primary__line {
+  transform: scale3d(1, 1, 1);
+}
+
+.b--btn-primary:hover .b--btn-primary__line--top,
+.b--btn-primary:active .b--btn-primary__line--top,
+.b--btn-primary:focus .b--btn-primary__line--top {
+  transform-origin: right center;
+  transition: transform 0.08s linear 0.48s, -webkit-transform 0.08s linear 0.48s;
+}
+
+.b--btn-primary:hover .b--btn-primary__line--left, 
+.b--btn-primary:active .b--btn-primary__line--left, 
+.b--btn-primary:focus .b--btn-primary__line--left {
+  transform-origin: center top;
+  transition: transform 0.5s cubic-bezier(0, 0.53, 0.29, 1) 0.56s, -webkit-transform 0.5s cubic-bezier(0, 0.53, 0.29, 1) 0.56s;
+}
+
+.b--btn-primary:hover .b--btn-primary__line--bottom, 
+.b--btn-primary:active .b--btn-primary__line--bottom,
+ .b--btn-primary:focus .b--btn-primary__line--bottom {
+  transform-origin: left center;
+  transition: transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.2s, -webkit-transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.2s;
+}

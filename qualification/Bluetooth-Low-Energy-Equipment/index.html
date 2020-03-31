@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://landtco.github.io/tel-mkdocs/qualification/Bluetooth-Low-Energy-Equipment/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Bluetooth Low Energy Equipment - Telink wiki</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="../../css/extra.css" rel="stylesheet">
+        <link href="../../css/content.css" rel="stylesheet">
+        <link href="../../css/nav.css" rel="stylesheet">
+        <link href="../../css/sidebar.css" rel="stylesheet">
+        <link href="../../css/buttons.css" rel="stylesheet">
+        <link href="../../css/card.css" rel="stylesheet">
+        <link href="../../css/order.css" rel="stylesheet">
+        <link href="../../css/form.css" rel="stylesheet">
+        <link href="../../css/footer.css" rel="stylesheet">
+        <link href="../../css/table.css" rel="stylesheet">
+        <link href="../../css/links.css" rel="stylesheet">
+        <link href="../../css/utilities.css" rel="stylesheet">
+        <link href="../../css/mermaid.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+ 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+    <a class="navbar-brand" href="https://landtco.github.io/tel-mkdocs/"></a>
+
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+    
+    <!-- Main navigation -->
+    <ul class="nav navbar-nav">
+        
+            
+                
+                    
+                        <li class="dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Chip Family <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                            
+                                
+<li >
+    <a href="../../chip-family/TLSR8x5x-Family/">TLSR8x5x Family</a>
+</li>
+                            
+                                
+<li >
+    <a href="../../chip-family/TLSR823x-TLSR836x-Series/">TLSR823x & TLSR836x Series</a>
+</li>
+                            
+                                
+<li >
+    <a href="../../chip-family/TLSR826x-Family/">TLSR826x Family</a>
+</li>
+                            
+                                
+<li >
+    <a href="../../chip-family/TLSR827x-TLSR8355-Series/">TLSR827x & TLSR8355 Series</a>
+</li>
+                            
+                            </ul>
+                        </li>
+                    
+                
+                    
+                        <li class="dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Hardware <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                            
+                                
+<li >
+    <a href="../../hardware/TLSR8x5x-Family-Boards/">TLRS8x5x Family Boards</a>
+</li>
+                            
+                                
+<li >
+    <a href="../../hardware/TLSR823x-Family-Boards/">TLRS823x Family Boards</a>
+</li>
+                            
+                            </ul>
+                        </li>
+                    
+                
+                    
+                        <li class="dropdown active">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Qualification <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                            
+                                
+<li class="active">
+    <a href="./">Bluetooth Low Energy Equipment</a>
+</li>
+                            
+                            </ul>
+                        </li>
+                    
+                
+                    
+                        <li class="dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Solution <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                            
+                                
+<li >
+    <a href="../../solution/ESL-System-Quick-Start/">ESL System Quick Start</a>
+</li>
+                            
+                                
+<li >
+    <a href="../../solution/BLE-Generic-Introduction/">BLE Generic Introduction</a>
+</li>
+                            
+                                
+<li >
+    <a href="../../solution/BLE-SIG-Mesh-Quick-Start/">BLE SIG Mesh Quick Start</a>
+</li>
+                            
+                                
+<li >
+    <a href="../../solution/826x-BLE-RCU-Quick-Start/">826x BLE RCU Quick Start</a>
+</li>
+                            
+                                
+<li >
+    <a href="../../solution/8258-BLE-RCU-Quick-Start/">8258 BLE RCU Quick Start</a>
+</li>
+                            
+                                
+<li >
+    <a href="../../solution/BLE-Telink-Mesh-Quick-Start/">BLE Telink Mesh Quick Start</a>
+</li>
+                            
+                            </ul>
+                        </li>
+                    
+                
+                    
+                        <li class="dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Tools <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                            
+                                
+<li >
+    <a href="../../tools/BQB-Test-Guide/">BQB Test Guide</a>
+</li>
+                            
+                                
+<li >
+    <a href="../../tools/EMI-Test-Guide/">EMI Test Guide</a>
+</li>
+                            
+                                
+<li >
+    <a href="../../tools/Telink-IDE/">Telink IDE</a>
+</li>
+                            
+                                
+<li >
+    <a href="../../tools/Burning-and-Debugging-Tool/">Burning and Debugging Tool</a>
+</li>
+                            
+                            </ul>
+                        </li>
+                    
+                
+            
+        
+
+        
+
+    </ul>
+    
+
+
+
+                    <ul class="nav navbar-nav navbar-right">
+
+
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+    <div class="col-md-3 sticky-top d-none d-md-block">
+        <div class="content-top">
+
+
+
+    
+    
+
+    <nav id="telink-1"  class="nav collapse show" data-parent="#accordionExample" aria-labelledby="telink-1">
+        
+        
+
+        
+            
+                
+                
+
+                <div class="b--nav-sub" data-md-component="collapsible" data-md-level="2">
+                    <ul class="list-unstyled" data-md-scrollfix>
+                        
+                            <li class="md-nav__item md-nav__item--nested">
+                                <a href="#navitem-1" title="Chip Family" class="b--nav-link" role="button" data-toggle="collapse" href="#navitem-1" aria-expanded="false" aria-controls="#navitem-1">
+                                    Chip Family
+                                </a>
+                                <div id="navitem-1"  class="collapse">
+                                    <nav class="b--nav-sub" data-md-component="collapsible" data-md-level="2">
+                                        <ul class="list-unstyled sub-nav" data-md-scrollfix style="margin-left: 2rem;">
+                                        
+                                        
+                                            
+                                            
+                                            
+<li >
+    <a href="../../chip-family/TLSR8x5x-Family/">TLSR8x5x Family</a>
+</li>
+                                        
+                                            
+                                            
+                                            
+<li >
+    <a href="../../chip-family/TLSR823x-TLSR836x-Series/">TLSR823x & TLSR836x Series</a>
+</li>
+                                        
+                                            
+                                            
+                                            
+<li >
+    <a href="../../chip-family/TLSR826x-Family/">TLSR826x Family</a>
+</li>
+                                        
+                                            
+                                            
+                                            
+<li >
+    <a href="../../chip-family/TLSR827x-TLSR8355-Series/">TLSR827x & TLSR8355 Series</a>
+</li>
+                                        
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </li>
+                        
+                    </ul>
+                </div>
+            
+                
+                
+
+                <div class="b--nav-sub" data-md-component="collapsible" data-md-level="2">
+                    <ul class="list-unstyled" data-md-scrollfix>
+                        
+                            <li class="md-nav__item md-nav__item--nested">
+                                <a href="#navitem-2" title="Hardware" class="b--nav-link" role="button" data-toggle="collapse" href="#navitem-2" aria-expanded="false" aria-controls="#navitem-2">
+                                    Hardware
+                                </a>
+                                <div id="navitem-2"  class="collapse">
+                                    <nav class="b--nav-sub" data-md-component="collapsible" data-md-level="2">
+                                        <ul class="list-unstyled sub-nav" data-md-scrollfix style="margin-left: 2rem;">
+                                        
+                                        
+                                            
+                                            
+                                            
+<li >
+    <a href="../../hardware/TLSR8x5x-Family-Boards/">TLRS8x5x Family Boards</a>
+</li>
+                                        
+                                            
+                                            
+                                            
+<li >
+    <a href="../../hardware/TLSR823x-Family-Boards/">TLRS823x Family Boards</a>
+</li>
+                                        
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </li>
+                        
+                    </ul>
+                </div>
+            
+                
+                
+
+                <div class="b--nav-sub" data-md-component="collapsible" data-md-level="2">
+                    <ul class="list-unstyled" data-md-scrollfix>
+                        
+                            <li class="md-nav__item md-nav__item--nested">
+                                <a href="#navitem-3" title="Qualification" class="b--nav-link active" role="button" data-toggle="collapse" href="#navitem-3" aria-expanded="false" aria-controls="#navitem-3">
+                                    Qualification
+                                </a>
+                                <div id="navitem-3"  class="collapse show">
+                                    <nav class="b--nav-sub" data-md-component="collapsible" data-md-level="2">
+                                        <ul class="list-unstyled sub-nav" data-md-scrollfix style="margin-left: 2rem;">
+                                        
+                                        
+                                            
+                                            
+                                            
+<li class="active">
+    <a href="./">Bluetooth Low Energy Equipment</a>
+</li>
+                                        
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </li>
+                        
+                    </ul>
+                </div>
+            
+                
+                
+
+                <div class="b--nav-sub" data-md-component="collapsible" data-md-level="2">
+                    <ul class="list-unstyled" data-md-scrollfix>
+                        
+                            <li class="md-nav__item md-nav__item--nested">
+                                <a href="#navitem-4" title="Solution" class="b--nav-link" role="button" data-toggle="collapse" href="#navitem-4" aria-expanded="false" aria-controls="#navitem-4">
+                                    Solution
+                                </a>
+                                <div id="navitem-4"  class="collapse">
+                                    <nav class="b--nav-sub" data-md-component="collapsible" data-md-level="2">
+                                        <ul class="list-unstyled sub-nav" data-md-scrollfix style="margin-left: 2rem;">
+                                        
+                                        
+                                            
+                                            
+                                            
+<li >
+    <a href="../../solution/ESL-System-Quick-Start/">ESL System Quick Start</a>
+</li>
+                                        
+                                            
+                                            
+                                            
+<li >
+    <a href="../../solution/BLE-Generic-Introduction/">BLE Generic Introduction</a>
+</li>
+                                        
+                                            
+                                            
+                                            
+<li >
+    <a href="../../solution/BLE-SIG-Mesh-Quick-Start/">BLE SIG Mesh Quick Start</a>
+</li>
+                                        
+                                            
+                                            
+                                            
+<li >
+    <a href="../../solution/826x-BLE-RCU-Quick-Start/">826x BLE RCU Quick Start</a>
+</li>
+                                        
+                                            
+                                            
+                                            
+<li >
+    <a href="../../solution/8258-BLE-RCU-Quick-Start/">8258 BLE RCU Quick Start</a>
+</li>
+                                        
+                                            
+                                            
+                                            
+<li >
+    <a href="../../solution/BLE-Telink-Mesh-Quick-Start/">BLE Telink Mesh Quick Start</a>
+</li>
+                                        
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </li>
+                        
+                    </ul>
+                </div>
+            
+                
+                
+
+                <div class="b--nav-sub" data-md-component="collapsible" data-md-level="2">
+                    <ul class="list-unstyled" data-md-scrollfix>
+                        
+                            <li class="md-nav__item md-nav__item--nested">
+                                <a href="#navitem-5" title="Tools" class="b--nav-link" role="button" data-toggle="collapse" href="#navitem-5" aria-expanded="false" aria-controls="#navitem-5">
+                                    Tools
+                                </a>
+                                <div id="navitem-5"  class="collapse">
+                                    <nav class="b--nav-sub" data-md-component="collapsible" data-md-level="2">
+                                        <ul class="list-unstyled sub-nav" data-md-scrollfix style="margin-left: 2rem;">
+                                        
+                                        
+                                            
+                                            
+                                            
+<li >
+    <a href="../../tools/BQB-Test-Guide/">BQB Test Guide</a>
+</li>
+                                        
+                                            
+                                            
+                                            
+<li >
+    <a href="../../tools/EMI-Test-Guide/">EMI Test Guide</a>
+</li>
+                                        
+                                            
+                                            
+                                            
+<li >
+    <a href="../../tools/Telink-IDE/">Telink IDE</a>
+</li>
+                                        
+                                            
+                                            
+                                            
+<li >
+    <a href="../../tools/Burning-and-Debugging-Tool/">Burning and Debugging Tool</a>
+</li>
+                                        
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </li>
+                        
+                    </ul>
+                </div>
+            
+        
+
+    </nav>
+  </div>
+    </div>
+    <div class="col-md-9" role="main"><div  class="content-top">
+
+
+    <div class="col-md-12">
+        <h1 id="bluetooth-low-energy-equipment-1">Bluetooth Low Energy Equipment 1</h1>
+<hr class="border-primary">
+
+<p>BLE measurement equipment can be sorted in two kinds. Telink prepares some documents here which are helpful for customers to verify their boards.</p>
+<h3 id="non-signaling">non-signaling</h3>
+<p>One kind is named as non-signaling equipment. It means PC is the control center, it controls equipment and dut respectively.When the equipment acts as a signal generator, dut acts as a receiver and gives the feedback to PC tool. When dut acts as a signal generator, the equipment acts as a receiver and shows the test result on PC tool.Some popular equipment are listed here.</p>
+<ol>
+<li>Itest - WT-200</li>
+</ol>
+<p><a href="https://telinkgithub.github.io/Assets/General/AN_19032100-E_WT-200 Guide on Testing Telink BLE Module.pdf">WT-200 user guide</a></p>
+<ol start="2">
+<li>
+<p>Litepoint - IQ2010</p>
+</li>
+<li>
+<p>Anritsu - MT8870A</p>
+</li>
+</ol>
+<h3 id="signaling">signaling</h3>
+<p>The other kind is named as signaling equipment. It means PC only controls equipment, dut is plugged in equipment and doesn&rsquo;t communicate with PC directly. So operater only uses PC tool to control equipment and get the measurement result.</p>
+<ol>
+<li>
+<p>R&amp;S - CMW270/CMW500</p>
+</li>
+<li>
+<p>Anritsu - MT8852B</p>
+</li>
+</ol>
+<p><a href="https://telinkgithub.github.io/Assets/General/AN_BLE-16032100-E_Telink BLE PHY Test Manual.pdf">MT8852B user guide</a></p>
+<p><br><br />
+<br><br />
+<br><br />
+<br></p>
+<h2 id="1-strikethrough">1. Strikethrough</h2>
+<p><strike>strike1</strike><br />
+<del>This is not needed</del><br />
+<s>strike3</s></p>
+<hr  class="border-primary">
+
+<h2 id="2-block-quotes">2.  Block quotes</h2>
+<blockquote>
+<p>This is a quote.</p>
+<blockquote>
+<p>Where this is quoted item two.</p>
+<blockquote>
+<p>And this is quoted item three.</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<hr  class="border-primary">
+
+<h2 id="3-footnote">3. Footnote</h2>
+<p>Lorem ipsum<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> dolor sit amet, consectetur adipiscing elit.<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup></p>
+<p>This is a footnote<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup></p>
+<hr  class="border-primary">
+
+<h2 id="4-mathematical-formula">4. Mathematical Formula</h2>
+<p>This is an in-line formula: $E=mc^2$</p>
+<p>This is an interline formula: $$f(x)=\frac{2}{3}x+3$$</p>
+<p>$$<br />
+\frac{n!}{k!(n-k)!} = \binom{n}{k}<br />
+$$</p>
+<hr  class="border-primary">
+
+<h2 id="5-flow-diagram">5. Flow diagram</h2>
+<div class="mermaid">
+graph TD
+A[Start] -->|Yes| B(My Operation)
+B --> C{Yes or No?}
+C -->|Yes| D[End1]
+C -->|No| E[End2]
+C -->|Maybe| F[End3]
+  </div>
+
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod<br />
+nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor<br />
+massa, nec semper lorem quam in massa.&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:3">
+<p>sit amet, consectetur adipiscin&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+    </div>
+
+</div></div>
+
+        </div>
+
+        <footer class="col-md-12">
+    <div class="container">
+        <div class="row">
+        <div class="col-lg-6">
+            <p class="b--font-seventh text-white">Copyright © 2020 Telink. All rights reserved.</p>
+            <p class="b--font-seventh text-white">
+                <a class="b--footer__link b--font-seventh text-white" 
+                href="https://www.telink-semi.com/privacy-policy/" target="_blank" rel="noopener noreferrer">Privacy Policy
+            </a>
+        </p></div>
+        </div>
+    </div>
+
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="https://unpkg.com/mermaid@7.1.0/dist/mermaid.js" defer></script>
+        <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" defer></script>
+        <script src="../../js/mathjaxhelperInline.js" defer></script>
+
+        <div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

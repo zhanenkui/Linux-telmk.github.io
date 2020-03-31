@@ -1,0 +1,24 @@
+.mb-3 {
+  margin-bottom: 32px;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+@media (min-width: 992px) {
+  .mb-md-3 {
+    margin-bottom: 32px;
+  }
+}
+
+.border-primary {
+  border-bottom : 2.5px solid rgb(146, 240, 161);
+}
+
+.pre {
+  display:       block;
+  unicode-bidi:  embed;
+  font-family:   monospace;
+  white-space:   pre;
+}

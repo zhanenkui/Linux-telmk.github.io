@@ -1,0 +1,21 @@
+.table-contents {
+  padding: 3rem .5rem;
+  border-bottom: 2.5px solid rgb(146, 240, 161);
+}
+.content-top {
+  padding-top: 50px;
+}
+
+.sticky-top {
+  position: sticky;
+  top: 30px;
+}
+
+@media only screen and (min-width: 992px) {
+  .d-md-block {
+    display: block !important;
+  }
+  .content-top {
+    padding-top: 150px;
+  }
+}

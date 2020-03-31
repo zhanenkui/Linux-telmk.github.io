@@ -1,0 +1,29 @@
+footer {
+    background-color: #051023;
+}
+
+@media screen and (min-width: 200px) {
+    footer {
+        padding-bottom: 45px;
+        padding-top: 30px;
+    }
+}
+
+
+@media screen and (min-width: 992px) {
+    footer {
+        padding-bottom: 75px;
+        padding-top: 45px;
+    }
+}
+
+.text-white {
+    color: white;
+}
+
+.b--font-seventh {
+    font-family: "Maven Pro", sans-serif;
+    font-size: 14px;
+    line-height: 1.45;
+    letter-spacing: normal;
+}

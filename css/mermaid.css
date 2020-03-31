@@ -1,0 +1,10 @@
+.mermaid .node rect, 
+.mermaid .node circle, 
+.mermaid .node ellipse, 
+.mermaid .node polygon {
+    fill : #F6F6F6;
+    stroke : #000000;
+}
+.mermaid .edgeLabel{
+    background-color: #fff;
+}

@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://landtco.github.io/tel-mkdocs/solution/BLE-SIG-Mesh-Quick-Start/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>BLE SIG Mesh Quick Start - Telink wiki</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="../../css/extra.css" rel="stylesheet">
+        <link href="../../css/content.css" rel="stylesheet">
+        <link href="../../css/nav.css" rel="stylesheet">
+        <link href="../../css/sidebar.css" rel="stylesheet">
+        <link href="../../css/buttons.css" rel="stylesheet">
+        <link href="../../css/card.css" rel="stylesheet">
+        <link href="../../css/order.css" rel="stylesheet">
+        <link href="../../css/form.css" rel="stylesheet">
+        <link href="../../css/footer.css" rel="stylesheet">
+        <link href="../../css/table.css" rel="stylesheet">
+        <link href="../../css/links.css" rel="stylesheet">
+        <link href="../../css/utilities.css" rel="stylesheet">
+        <link href="../../css/mermaid.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+ 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+    <a class="navbar-brand" href="https://landtco.github.io/tel-mkdocs/"></a>
+
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+    
+    <!-- Main navigation -->
+    <ul class="nav navbar-nav">
+        
+            
+                
+                    
+                        <li class="dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Chip Family <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                            
+                                
+<li >
+    <a href="../../chip-family/TLSR8x5x-Family/">TLSR8x5x Family</a>
+</li>
+                            
+                                
+<li >
+    <a href="../../chip-family/TLSR823x-TLSR836x-Series/">TLSR823x & TLSR836x Series</a>
+</li>
+                            
+                                
+<li >
+    <a href="../../chip-family/TLSR826x-Family/">TLSR826x Family</a>
+</li>
+                            
+                                
+<li >
+    <a href="../../chip-family/TLSR827x-TLSR8355-Series/">TLSR827x & TLSR8355 Series</a>
+</li>
+                            
+                            </ul>
+                        </li>
+                    
+                
+                    
+                        <li class="dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Hardware <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                            
+                                
+<li >
+    <a href="../../hardware/TLSR8x5x-Family-Boards/">TLRS8x5x Family Boards</a>
+</li>
+                            
+                                
+<li >
+    <a href="../../hardware/TLSR823x-Family-Boards/">TLRS823x Family Boards</a>
+</li>
+                            
+                            </ul>
+                        </li>
+                    
+                
+                    
+                        <li class="dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Qualification <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                            
+                                
+<li >
+    <a href="../../qualification/Bluetooth-Low-Energy-Equipment/">Bluetooth Low Energy Equipment</a>
+</li>
+                            
+                            </ul>
+                        </li>
+                    
+                
+                    
+                        <li class="dropdown active">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Solution <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                            
+                                
+<li >
+    <a href="../ESL-System-Quick-Start/">ESL System Quick Start</a>
+</li>
+                            
+                                
+<li >
+    <a href="../BLE-Generic-Introduction/">BLE Generic Introduction</a>
+</li>
+                            
+                                
+<li class="active">
+    <a href="./">BLE SIG Mesh Quick Start</a>
+</li>
+                            
+                                
+<li >
+    <a href="../826x-BLE-RCU-Quick-Start/">826x BLE RCU Quick Start</a>
+</li>
+                            
+                                
+<li >
+    <a href="../8258-BLE-RCU-Quick-Start/">8258 BLE RCU Quick Start</a>
+</li>
+                            
+                                
+<li >
+    <a href="../BLE-Telink-Mesh-Quick-Start/">BLE Telink Mesh Quick Start</a>
+</li>
+                            
+                            </ul>
+                        </li>
+                    
+                
+                    
+                        <li class="dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Tools <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                            
+                                
+<li >
+    <a href="../../tools/BQB-Test-Guide/">BQB Test Guide</a>
+</li>
+                            
+                                
+<li >
+    <a href="../../tools/EMI-Test-Guide/">EMI Test Guide</a>
+</li>
+                            
+                                
+<li >
+    <a href="../../tools/Telink-IDE/">Telink IDE</a>
+</li>
+                            
+                                
+<li >
+    <a href="../../tools/Burning-and-Debugging-Tool/">Burning and Debugging Tool</a>
+</li>
+                            
+                            </ul>
+                        </li>
+                    
+                
+            
+        
+
+        
+
+    </ul>
+    
+
+
+
+                    <ul class="nav navbar-nav navbar-right">
+
+
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+    <div class="col-md-3 sticky-top d-none d-md-block">
+        <div class="content-top">
+
+
+
+    
+    
+
+    <nav id="telink-1"  class="nav collapse show" data-parent="#accordionExample" aria-labelledby="telink-1">
+        
+        
+
+        
+            
+                
+                
+
+                <div class="b--nav-sub" data-md-component="collapsible" data-md-level="2">
+                    <ul class="list-unstyled" data-md-scrollfix>
+                        
+                            <li class="md-nav__item md-nav__item--nested">
+                                <a href="#navitem-1" title="Chip Family" class="b--nav-link" role="button" data-toggle="collapse" href="#navitem-1" aria-expanded="false" aria-controls="#navitem-1">
+                                    Chip Family
+                                </a>
+                                <div id="navitem-1"  class="collapse">
+                                    <nav class="b--nav-sub" data-md-component="collapsible" data-md-level="2">
+                                        <ul class="list-unstyled sub-nav" data-md-scrollfix style="margin-left: 2rem;">
+                                        
+                                        
+                                            
+                                            
+                                            
+<li >
+    <a href="../../chip-family/TLSR8x5x-Family/">TLSR8x5x Family</a>
+</li>
+                                        
+                                            
+                                            
+                                            
+<li >
+    <a href="../../chip-family/TLSR823x-TLSR836x-Series/">TLSR823x & TLSR836x Series</a>
+</li>
+                                        
+                                            
+                                            
+                                            
+<li >
+    <a href="../../chip-family/TLSR826x-Family/">TLSR826x Family</a>
+</li>
+                                        
+                                            
+                                            
+                                            
+<li >
+    <a href="../../chip-family/TLSR827x-TLSR8355-Series/">TLSR827x & TLSR8355 Series</a>
+</li>
+                                        
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </li>
+                        
+                    </ul>
+                </div>
+            
+                
+                
+
+                <div class="b--nav-sub" data-md-component="collapsible" data-md-level="2">
+                    <ul class="list-unstyled" data-md-scrollfix>
+                        
+                            <li class="md-nav__item md-nav__item--nested">
+                                <a href="#navitem-2" title="Hardware" class="b--nav-link" role="button" data-toggle="collapse" href="#navitem-2" aria-expanded="false" aria-controls="#navitem-2">
+                                    Hardware
+                                </a>
+                                <div id="navitem-2"  class="collapse">
+                                    <nav class="b--nav-sub" data-md-component="collapsible" data-md-level="2">
+                                        <ul class="list-unstyled sub-nav" data-md-scrollfix style="margin-left: 2rem;">
+                                        
+                                        
+                                            
+                                            
+                                            
+<li >
+    <a href="../../hardware/TLSR8x5x-Family-Boards/">TLRS8x5x Family Boards</a>
+</li>
+                                        
+                                            
+                                            
+                                            
+<li >
+    <a href="../../hardware/TLSR823x-Family-Boards/">TLRS823x Family Boards</a>
+</li>
+                                        
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </li>
+                        
+                    </ul>
+                </div>
+            
+                
+                
+
+                <div class="b--nav-sub" data-md-component="collapsible" data-md-level="2">
+                    <ul class="list-unstyled" data-md-scrollfix>
+                        
+                            <li class="md-nav__item md-nav__item--nested">
+                                <a href="#navitem-3" title="Qualification" class="b--nav-link" role="button" data-toggle="collapse" href="#navitem-3" aria-expanded="false" aria-controls="#navitem-3">
+                                    Qualification
+                                </a>
+                                <div id="navitem-3"  class="collapse">
+                                    <nav class="b--nav-sub" data-md-component="collapsible" data-md-level="2">
+                                        <ul class="list-unstyled sub-nav" data-md-scrollfix style="margin-left: 2rem;">
+                                        
+                                        
+                                            
+                                            
+                                            
+<li >
+    <a href="../../qualification/Bluetooth-Low-Energy-Equipment/">Bluetooth Low Energy Equipment</a>
+</li>
+                                        
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </li>
+                        
+                    </ul>
+                </div>
+            
+                
+                
+
+                <div class="b--nav-sub" data-md-component="collapsible" data-md-level="2">
+                    <ul class="list-unstyled" data-md-scrollfix>
+                        
+                            <li class="md-nav__item md-nav__item--nested">
+                                <a href="#navitem-4" title="Solution" class="b--nav-link active" role="button" data-toggle="collapse" href="#navitem-4" aria-expanded="false" aria-controls="#navitem-4">
+                                    Solution
+                                </a>
+                                <div id="navitem-4"  class="collapse show">
+                                    <nav class="b--nav-sub" data-md-component="collapsible" data-md-level="2">
+                                        <ul class="list-unstyled sub-nav" data-md-scrollfix style="margin-left: 2rem;">
+                                        
+                                        
+                                            
+                                            
+                                            
+<li >
+    <a href="../ESL-System-Quick-Start/">ESL System Quick Start</a>
+</li>
+                                        
+                                            
+                                            
+                                            
+<li >
+    <a href="../BLE-Generic-Introduction/">BLE Generic Introduction</a>
+</li>
+                                        
+                                            
+                                            
+                                            
+<li class="active">
+    <a href="./">BLE SIG Mesh Quick Start</a>
+</li>
+                                        
+                                            
+                                            
+                                            
+<li >
+    <a href="../826x-BLE-RCU-Quick-Start/">826x BLE RCU Quick Start</a>
+</li>
+                                        
+                                            
+                                            
+                                            
+<li >
+    <a href="../8258-BLE-RCU-Quick-Start/">8258 BLE RCU Quick Start</a>
+</li>
+                                        
+                                            
+                                            
+                                            
+<li >
+    <a href="../BLE-Telink-Mesh-Quick-Start/">BLE Telink Mesh Quick Start</a>
+</li>
+                                        
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </li>
+                        
+                    </ul>
+                </div>
+            
+                
+                
+
+                <div class="b--nav-sub" data-md-component="collapsible" data-md-level="2">
+                    <ul class="list-unstyled" data-md-scrollfix>
+                        
+                            <li class="md-nav__item md-nav__item--nested">
+                                <a href="#navitem-5" title="Tools" class="b--nav-link" role="button" data-toggle="collapse" href="#navitem-5" aria-expanded="false" aria-controls="#navitem-5">
+                                    Tools
+                                </a>
+                                <div id="navitem-5"  class="collapse">
+                                    <nav class="b--nav-sub" data-md-component="collapsible" data-md-level="2">
+                                        <ul class="list-unstyled sub-nav" data-md-scrollfix style="margin-left: 2rem;">
+                                        
+                                        
+                                            
+                                            
+                                            
+<li >
+    <a href="../../tools/BQB-Test-Guide/">BQB Test Guide</a>
+</li>
+                                        
+                                            
+                                            
+                                            
+<li >
+    <a href="../../tools/EMI-Test-Guide/">EMI Test Guide</a>
+</li>
+                                        
+                                            
+                                            
+                                            
+<li >
+    <a href="../../tools/Telink-IDE/">Telink IDE</a>
+</li>
+                                        
+                                            
+                                            
+                                            
+<li >
+    <a href="../../tools/Burning-and-Debugging-Tool/">Burning and Debugging Tool</a>
+</li>
+                                        
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </li>
+                        
+                    </ul>
+                </div>
+            
+        
+
+    </nav>
+  </div>
+    </div>
+    <div class="col-md-9" role="main"><div  class="content-top">
+
+
+    <div class="col-md-12">
+        <h1 id="ble-sig-mesh-quick-start">BLE SIG Mesh Quick Start</h1>
+<hr style="border-bottom:2.5px solid rgb(146, 240, 161)">
+
+<h2 id="introduction">Introduction</h2>
+<p>Both 8269 and 8258 support SIG mesh, and they are covered in the same SIG mesh SDK. Other than SDK, SW tools and APP, the only HW required are 8258 or 8269 dongle board and remote board.</p>
+<p>The Telink BLE Mesh Development Kit includes:</p>
+<ul>
+<li>Multiple USB dongles (8269 or 8258) for emulating mesh nodes or gateways</li>
+<li>Remote control PCBA for emulating remote controller, wall switch, and also for demonstrating group controls</li>
+<li>Burning EVK</li>
+<li>PC tools (burning tools, tools for controlling mesh nodes)</li>
+<li>Reference Android or iOS APPs</li>
+</ul>
+<p>BLE SIG mesh demo is presented in 4 different ways:</p>
+<ul>
+<li>Node Control by APP with OTA</li>
+<li>Node Control by Gateway with OTA</li>
+<li>Node Control by Remote</li>
+<li>Node Control by Master Dongle with OTA</li>
+</ul>
+<p>You can use the prebuilt binary for the following demo testing - <a href="https://telinkgithub.github.io/Assets/08_Solutions-Mesh/sig_mesh_sdk.7z">Demo binary based on SDK</a></p>
+<ul>
+<li>82xx_mesh.bin - the mesh light node</li>
+<li>82xx<em>mesh</em>gw.bin - the mesh gateway with PB_ADV capability</li>
+<li>82xx<em>mesh</em>LPN.bin - the mesh low power node</li>
+<li>82xx<em>mesh</em>switch.bin - the mesh light switch node</li>
+<li>sig<em>mesh</em>master<em>dongle</em>8267<em>69.bin - the mesh master dongle with PB</em>GATT</li>
+</ul>
+<p>For further info, please refer to SIG mesh Development Manual in 8269 or 8258 respective chipset page.</p>
+<h2 id="node-control-by-app">Node Control by APP</h2>
+<p>Node control by gateway demo requires 2 pieces of dongle emulating light bulb. They can be either 8258 or 8269. 8258 is used in this example. Light bulb bin is generated by “mesh” project with “8258_mesh” compile option. Available projects in SIG mesh SDK is shown below. The light bulbs, if has been provisioned previously, need to reset by having 3 short power cycling (on/off each 1s) followed by 2 long power cycling (on/off each 3-5s).</p>
+<p><img alt="APP1" src="https://telinkgithub.github.io/Assets/General/sdk.png" /></p>
+<p>Launch “TelinkSigMesh” APP under either Android or IOS. On front page as shown below, click “+” on upper right corner to add device. In “Device Scan” page, scan and wait each node from “binding” to “bound”.</p>
+<p><img alt="APP2" src="https://telinkgithub.github.io/Assets/General/appstartpage.png" /></p>
+<p>Back to front page, tap on light icon would toggle on/off, long press would enter into “Device Setting” page as shown below. LUM and TEMP level and group assignment can be set in “Control” and “Group” tab, respectively.</p>
+<p><img alt="APP3" src="https://telinkgithub.github.io/Assets/General/appcontrol.png" /><br />
+<img alt="APP4" src="https://telinkgithub.github.io/Assets/General/appgrp.png" /></p>
+<p>In “SETTINGS” tab as shown below, schedule, subscription, publish model can be set. Device OTA is also enabled. For schedule, macro “MD<em>TIME</em>EN” in mesh_config.h under vendor/common/ dir in SDK. Last, “KICK OUT” tab at the bottom would remove the light bulb from network.</p>
+<p><img alt="APP5" src="https://telinkgithub.github.io/Assets/General/appsettings.png" /></p>
+<h2 id="node-control-by-gateway">Node Control by Gateway</h2>
+<p>Node control by gateway demo requires 3 pieces of HW as shown below: 2 pieces of light bulb and 1 piece of gateway dongle. In this example, light bulb uses 8258 while gateway dongle is 8269.</p>
+<p><img alt="Gateway1" src="https://telinkgithub.github.io/Assets/General/mesh_demo_hw.png" /></p>
+<p>8269 dongle in this example is programmed by using “mesh<em>provision” project in SDK and “8269</em>mesh<em>gw(provisioner)” compile option; and light bulb bin is generated by “mesh” project with “8258</em>mesh” compile option. After being programmed, gateway dongle must be plugged in USB port of PC and light bulbs can be powered by any USB port.</p>
+<p>In “sig<em>mesh</em>tool”, INI file needs to switch to “tl<em>node</em>gateway.ini” in pull down menu as shown below. The light bulbs, if has been provisioned previously, need to reset by having 3 short power cycling (on/off each 1s) followed by 2 long power cycling (on/off each 3-5s). Successful reset would trigger 3 blinks.</p>
+<p>Next step is to launch “sig<em>mesh</em>tool” as shown below. Step 1 is to confirm gateway dongle is “Found”. Step 2 is to click on “Scan” button to pop out a window, select the MAC Address of the light bulb as Step 3 and then select “connect” as Step 4. Then click on “Prov” as Step 5. MAC address can be customized using BDT tool.</p>
+<p><img alt="Gateway2" src="https://telinkgithub.github.io/Assets/General/gatewayini.png" /></p>
+<p>In Provision window as shown below, First click on “setPro<em>internal” (only once)，then “Provision” button on left pane, once provision is finished, “bind</em>all” on right pane becomes selectable, go ahead select “bind<em>all” to complete provision. LED on light dongle should blink at provision completion. “Uncast</em>addr” is automatically incremented by “0x0200” as an unique ID to each light bulb. Repeat “Scan”, “Connect” and “Prov” for the other light bulb.</p>
+<p><img alt="Gateway3" src="https://telinkgithub.github.io/Assets/General/provision.png" /></p>
+<p>Now continue into Step 6 by clicking on “Mesh” button in “sig<em>mesh</em>tool” UI. This will bring out the light control UI as shown below. Light bulbs is listed in the “Mesh” pane on left side of the window with corresponding unicast address. By double clicking on the specific light, as indicated in field “2”, this particular light can be assigned to desired group by checking on the open box as step “3”. Once group assignment is done, each group can be turned off/on by itself.</p>
+<p><img alt="Gateway4" src="https://telinkgithub.github.io/Assets/General/grouping.png" /></p>
+<h2 id="node-control-by-remote">Node Control by Remote</h2>
+<p>Following is a lighting remote control HW, SOC can be either 8258 or 8269.</p>
+<p><img alt="Remote1" src="https://telinkgithub.github.io/Assets/General/light_rcu.png" /></p>
+<p>First, generate remote bin file by using “mesh<em>switch” project in SDK and using “8269</em>mesh_switch” compile option in this example. Please notice that a button need to be pressed while download FW. Once programmed, the remote control will need to go through the same “scan”, “connect” and “provision” procedure as described above for lighting bulbs. Afterwards, user can use button A and B as indicated to turn all on and all off, respectively, and they are SIG model commands. Press A and D simultaneously will put it in advertising mode, LED will also blink. C and D are to control group on/off, and they are vendor model command, for the time being, only internal printing message are available for C and D commands.</p>
+<h2 id="node-control-by-master-dongle">Node Control by Master Dongle</h2>
+<p>Master dongle demo shares same HW as gateway demo.</p>
+<p>Master dongle bin is generated by “8267<em>master</em>kma<em>dongle” project in SDK with compile option “sig</em>mesh<em>master</em>dongle<em>8267</em>8269”; and light bulb bin is generated by “8258_mesh” project with “8258 mesh” compile option. After being programmed, master dongle should plug in PC USB port.</p>
+<p>In “sig<em>mesh</em>tool” as shown below, “sig<em>mesh</em>master.ini” is used. Provision and grouping in Mesh window is the same as gateway.</p>
+<p><img alt="Dongle1" src="https://telinkgithub.github.io/Assets/General/sig_mesh_tool.png" /></p>
+<h2 id="mesh-ota-by-master-dongle">Mesh OTA by Master Dongle</h2>
+<p>Continuing with the Master Dongle setup, place the new bin file under the same dir as where “sig<em>mesh</em>tool” resides, and name it as “new<em>firmware</em>tx.bin”. Confirm the mesh nodes status by going into Mesh window and click “Nodes” button.</p>
+<p>In following window, double click “fw<em>info</em>get<em>all” command, in this example, current version is highlighted in hex “56 32 2e 36” for ASCII V2.6. Continue double click “fw</em>distribution<em>start</em>all” would trigger mesh OTA.</p>
+<p><img alt="Mesh-OTA-Dongle1" src="https://telinkgithub.github.io/Assets/General/mesh_ota_master_dongle.png" /></p>
+    </div>
+
+</div></div>
+
+        </div>
+
+        <footer class="col-md-12">
+    <div class="container">
+        <div class="row">
+        <div class="col-lg-6">
+            <p class="b--font-seventh text-white">Copyright © 2020 Telink. All rights reserved.</p>
+            <p class="b--font-seventh text-white">
+                <a class="b--footer__link b--font-seventh text-white" 
+                href="https://www.telink-semi.com/privacy-policy/" target="_blank" rel="noopener noreferrer">Privacy Policy
+            </a>
+        </p></div>
+        </div>
+    </div>
+
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="https://unpkg.com/mermaid@7.1.0/dist/mermaid.js" defer></script>
+        <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" defer></script>
+        <script src="../../js/mathjaxhelperInline.js" defer></script>
+
+        <div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

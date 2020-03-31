@@ -1,0 +1,74 @@
+.b--form-group__input {
+    border-top-style: initial;
+    border-right-style: initial;
+    border-left-style: initial;
+    border-top-color: initial;
+    border-right-color: initial;
+    border-left-color: initial;
+    width: 100%;
+    font-family: "Maven Pro", sans-serif;
+    color:  rgb(10, 45, 114);
+    font-size: 16px;
+    resize: none;
+    display: block;
+    -webkit-appearance: none !important;
+    box-shadow: none !important;
+    border-width: 0px 0px 1px;
+    border-image: initial;
+    padding: 12px 0px;
+    border-bottom: 1px solid  rgb(10, 45, 114);
+    background: transparent;
+    border-radius: 0px !important;
+}
+
+.b--form-group {
+    margin-bottom: 20px;
+    position: relative;
+    box-shadow: none !important;
+    display: block;
+    margin: 0px;
+}
+
+.b--bg--color-primary {
+    background-color: rgb(10, 45, 114);
+}
+
+.b--form-group__line{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 0px;
+    height: 2px;
+    background-color: rgb(146, 240, 161);
+    transition: all 0.4s ease 0s;
+}
+
+
+.b--form-group__input ~ .b--form-group__line {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 0px;
+    height: 2px;
+    background-color: rgb(146, 240, 161);
+    transition: all 0.4s ease 0s;
+}
+
+input:focus, 
+textarea:focus, 
+select:focus {
+    outline-offset: 0px;
+    outline: 0px;
+}
+
+.b--font-fourth{
+    /* color :  rgb(146, 240, 161); */
+    font-family: "Maven Pro", sans-serif;
+    font-size: 25px;
+    line-height: 1.33;
+    letter-spacing: normal;
+}
+
+a.b--company-list-group__list-item__link {
+    color: rgb(10, 45, 114);
+}
